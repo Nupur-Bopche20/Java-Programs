@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class java_04 {
+    public static void main(String args[]){ 
+        Scanner in =new Scanner(System.in);
+
+        System.out.println("Enter any two numbers:");
+
+        //Reading data using readline...
+        int p = in.nextInt();
+        int q = in.nextInt();
+        int sum , sub ,mul,mod;
+        float div;
+
+        sum = p+q;
+        sub = p-q;
+        mul = p/q;
+        div = p/q;
+        mod = p%q;
+
+        System.out.println( " The ADDITON of the given two numbers is " + sum);
+
+        System.out.println( " The SUBSTRACTION of the given two numbers is " + sub);
+
+        System.out.println( " The MULTIPLICATION of the given two numbers is " + mul);
+
+        System.out.println( " The DIVISION of the given two numbers is " + div);
+
+        System.out.println( " The MODULUS of the given two numbers is " + mod);
+        
+      
+
+}
+}

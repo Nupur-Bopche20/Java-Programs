@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class java_11{
+
+    public static void main(String[] args) {
+
+        // Create scanner class object
+        Scanner in = new Scanner(System.in);
+
+        //Take input from user
+        System.out.println("Enter the number to be converted from Decimal to Binary:");
+        int num = in.nextInt();
+
+        System.out.println("Binary Representation of decimal no. " + num);
+        System.out.println(Integer.toBinaryString(+num));
+
+    }
+}

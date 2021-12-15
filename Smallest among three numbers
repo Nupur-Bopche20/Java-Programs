@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class java_07 {
+    public static void main(String[] arg){
+        int a =5;
+        int b = 20;
+        int c = 13;
+
+        if (a<b && a<c){
+            System.out.println("a is the smallest number");}
+
+            else if(b<a && b<c){
+                System.out.println("b is the smallest number");}
+            
+
+            else if(c<a && c<b){
+                System.out.println("b is the smallest number");}
+            
+
+            else {
+                System.out.println("All three numbers are equal");}
+
+        }
+
+}

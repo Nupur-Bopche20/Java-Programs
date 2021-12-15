@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class java_10 {
+    public static void main(String[] args) {
+
+        double Second_Root = 0, First_Root = 0;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the value of a :");
+        double a = sc.nextDouble();
+
+        System.out.println("Enter the value of b :");
+        double b = sc.nextDouble();
+
+        System.out.println("Enter the value of c :");
+        double c = sc.nextDouble();
+
+        double determinant = (b * b) - (4 * a * c);
+        double sqrt = Math.sqrt(determinant);
+
+        if (determinant > 0) {
+            First_Root = (-b + sqrt) / (2 * a);
+            Second_Root = (-b - sqrt) / (2 * a);
+
+            System.out.println("The Roots are : " + First_Root + "and" + Second_Root);
+
+        }
+
+        else if (determinant == 0) {
+            System.out.println("The Roots are equal and the root is : " + (-b + sqrt / 2 * a));
+        }
+
+        else {
+            System.out.println("Roots are Imaginary");
+        }
+
+    }
+}
